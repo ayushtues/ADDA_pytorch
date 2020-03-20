@@ -10,13 +10,13 @@ transform_svhn = transforms.Compose([transforms.ToTensor()])
 transform_usps = transforms.Compose([transforms.Resize([32,32]),transforms.ToTensor()])     
 
 
-mnist_data_train = torchvision.datasets.MNIST('/home/deku/data_adda/datasets_adda', train=True, transform=transform_mnist, target_transform=None, download=True)
-svhn_data_train = torchvision.datasets.SVHN('/home/deku/data_adda/datasets_adda', split='train', transform=transform_svhn, target_transform=None, download=True)
-usps_data_train = torchvision.datasets.USPS('/home/deku/data_adda/datasets_adda', train=True, transform=transform_usps, target_transform=None, download=True)
+mnist_data_train = torchvision.datasets.MNIST('/home/deku/Coding/data_adda/datasets_adda', train=True, transform=transform_mnist, target_transform=None, download=True)
+svhn_data_train = torchvision.datasets.SVHN('/home/deku/Coding/data_adda/datasets_adda', split='train', transform=transform_svhn, target_transform=None, download=True)
+usps_data_train = torchvision.datasets.USPS('/home/deku/Coding/data_adda/datasets_adda', train=True, transform=transform_usps, target_transform=None, download=True)
 
-mnist_data_test = torchvision.datasets.MNIST('/home/deku/data_adda/datasets_adda', train=False, transform=transform_mnist, target_transform=None, download=True)
-svhn_data_test = torchvision.datasets.SVHN('/home/deku/data_adda/datasets_adda', split='test', transform=transform_svhn, target_transform=None, download=True)
-usps_data_test = torchvision.datasets.USPS('/home/deku/data_adda/datasets_adda', train=False, transform=transform_usps, target_transform=None, download=True)
+mnist_data_test = torchvision.datasets.MNIST('/home/deku/Coding/data_adda/datasets_adda', train=False, transform=transform_mnist, target_transform=None, download=True)
+svhn_data_test = torchvision.datasets.SVHN('/home/deku/Coding/data_adda/datasets_adda', split='test', transform=transform_svhn, target_transform=None, download=True)
+usps_data_test = torchvision.datasets.USPS('/home/deku/Coding/data_adda/datasets_adda', train=False, transform=transform_usps, target_transform=None, download=True)
 
 
 
